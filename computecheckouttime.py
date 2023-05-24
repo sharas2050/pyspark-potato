@@ -2,10 +2,10 @@ import argparse
 
 CLI = argparse.ArgumentParser()
 CLI.add_argument(
-    "--customers",  # name on the CLI - drop the `--` for positional/required parameters
-    nargs="*",  # 0 or more values expected => creates a list
+    "--customers",
+    nargs="*",
     type=int,
-    default=[1, 2, 3],  # default if nothing is provided
+    default=[1, 2, 3]
 )
 CLI.add_argument(
     "--counters",
